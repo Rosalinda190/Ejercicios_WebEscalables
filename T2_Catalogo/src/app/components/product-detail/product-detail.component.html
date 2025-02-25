@@ -1,0 +1,7 @@
+<div>
+    <img [src]="product.imageUrl" [alt]="product.name" class="product-thumbnail">
+    <h3>{{product.name}}</h3>
+    <p> <strong> Precio: </strong> ${{product.price }}</p>
+    <p><strong> Disponibilidad: </strong> {{product.inStock ? 'En stock' : 'Agotado' }} </p>
+    <p> <strong> En oferta: </strong> {{ product.onSale ? 'Sí' : ' No'}} </p>
+</div>
